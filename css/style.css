@@ -83,8 +83,7 @@ html {
     margin-top: -20px;
 }
 
-.menu-list li,
-.playlist li {
+.menu-list li {
     list-style: none;
     font-size: 12px;
     font-weight: 500;
@@ -141,6 +140,7 @@ html {
     margin-top: 40px;
     width: 100%;
     opacity: .5;
+    list-style: none;
 
     /* border: 2px solid red; */
 }
@@ -162,10 +162,30 @@ html {
     margin-right: 20px;
 }
 
-.playlist hr {
-    margin-left: -20px;
-    width: 80%;
+ hr {
+    margin-left: -10px;
+    margin-top: 50px;
+    width: 90%;
+    opacity: .5;
 }
+
+.playlist {
+    font-size: 12px;
+    margin-left: -10px;
+    position: relative;
+    height: 10px; 
+}
+
+.playlist p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 100;
+    opacity: 1;
+    margin-top: -20px;  
+}
+
+
 
 
 
