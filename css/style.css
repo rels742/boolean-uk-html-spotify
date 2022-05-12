@@ -121,29 +121,21 @@ html {
 
     margin-right: 20px;
 }
-/* End of left menu layout */
-
-
-/* Main feed layout */
-/* Header layout within the main feed grid */
-.header {
-    display: grid;
-    position: fixed;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px;
-
-    background-color: #0C213D; 
-}
 
 .playlist {
     margin-top: 40px;
     width: 100%;
     opacity: .5;
     list-style: none;
+    font-size: 12px;
+    margin-left: -10px;
+    position: relative;
+    height: 10px;
 
     /* border: 2px solid red; */
 }
+
+
 
 /* Manually created the 'add playlist icon' */
 .fa-plus {
@@ -162,18 +154,11 @@ html {
     margin-right: 20px;
 }
 
- hr {
+ #playlist-hr {
     margin-left: -10px;
     margin-top: 50px;
     width: 90%;
     opacity: .5;
-}
-
-.playlist {
-    font-size: 12px;
-    margin-left: -10px;
-    position: relative;
-    height: 10px; 
 }
 
 .playlist p {
@@ -182,10 +167,69 @@ html {
     white-space: nowrap;
     font-weight: 100;
     opacity: 1;
-    margin-top: -20px;  
+    margin-top: -20px;
+}
+
+.bottom {
+    margin-bottom: 70px;
+}
+
+.install-app li:nth-child(1) {
+    opacity: .5;
 }
 
 
+.profile {
+    width: 30px;
+    height: 30px;
+    background: grey ;
+    border-radius: 50%;
+}
 
+.install-app img {
+    position: relative;
+    top: 10px;
+    right: 4px;
+}
+
+.install-icon {
+    width: 25px;
+    height: 25px;
+    background: none;
+}
+
+.install-app li {
+    list-style: none;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: -10px;
+    width: 80%;   
+}
+
+.install-app li:hover {
+    opacity: 1;
+    transition: .4s;
+}
+
+#install-app-hr {
+    margin-left: -10px;
+    width: 90%;
+    opacity: .5;
+}
+/* End of left menu layout */
+
+
+/* Main feed layout */
+/* Header layout within the main feed grid */
+.header {
+    display: grid;
+    position: fixed;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px;
+
+    background-color: #080c14; 
+}
+/* End of main feed layout */
 
 
