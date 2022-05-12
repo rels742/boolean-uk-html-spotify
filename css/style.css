@@ -230,6 +230,45 @@ html {
 
     background-color: #080c14; 
 }
+
+.button{
+    background-color: rgba(0, 0, 0, .6);
+    height: 15px;
+    width: 15px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-buttons {
+    display: grid;
+    grid-template-columns: 50px 50px 100px;
+    margin: 10px 40px;
+}
+
+button {
+    border-radius: 25px;
+    width: 200px;
+    margin-left: 900px;
+   
+    cursor: pointer;
+    background-color: transparent;
+    border: solid white;
+    color: white;
+}
+
+button:hover {
+    border: solid rgba(255, 255, 255, .8);
+}
+
+.inner-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+
 /* End of main feed layout */
 
 
