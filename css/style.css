@@ -1,0 +1,62 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: auto;    
+    /* overflow property stops the white space "bounce" effect when scrolling to the top and bottom of page  */
+    color: white;
+}
+
+html {
+    overflow: hidden;
+    /* overflow property stops the white space "bounce" effect when scrolling to the top and bottom of page  */
+}
+
+/* Main grid layout */
+.main-container {
+    display: grid;
+    grid-template-areas:
+    "left-menu main" 
+    "footer footer" ;
+
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 1fr 90px ;
+    height: 100vh;
+}
+
+.left-menu {
+    grid-area: left-menu;
+    background-color: black;
+    position: fixed;
+    width: 240px;  
+    height: 864.500px; 
+    /* position: sticky;
+    bottom: 0; */
+   
+}
+
+.main-feed {
+    grid-area: main;
+
+    background-color: rgb(32, 32, 32);
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    position: sticky;
+    bottom: 0;
+
+    background-color: grey;
+}
+
+/* Header layout within the main feed grid */
+.header {
+    display: grid;
+    position: fixed;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px;
+
+    background-color: blue;
+}
