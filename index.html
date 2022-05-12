@@ -5,13 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify</title>
 </head>
 <body>
 
     <main>
         <section class="main-container">
-            <div class="left-menu">left menu</div>
+
+            <div class="left-menu">
+                <div class="logo" id="logo"> <i class="fa-brands fa-spotify"> </i> <h1>Spotify</h1></div>
+
+                <ul class="menu-list">
+                    <li> <img src="./assets/img/home.svg" alt="home icon"> Home</li>
+                    <li class="list-item-greyed"> <img src="./assets/img/search.svg" alt="search icon"> Search</li>
+                    <li class="list-item-greyed"> <img src="./assets/img/libreria.svg" alt="library icon"> Your Library</li>
+                </ul>
+
+                <ul class="playlist">
+                    <li class="playlist-greyed"> <i class="fa-solid fa-plus"></i> Create Playlist</li>
+                    <li> <i class="fa-solid fa-heart"></i> Liked Songs</li>
+                    <hr>
+                </ul>
+            </div>
 
             <div class="main-feed">
                 <header>

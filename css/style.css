@@ -5,12 +5,14 @@ body {
     overflow: auto;    
     /* overflow property stops the white space "bounce" effect when scrolling to the top and bottom of page  */
     color: white;
+    font-family: 'Rubik', sans-serif;
 }
 
 html {
     overflow: hidden;
     /* overflow property stops the white space "bounce" effect when scrolling to the top and bottom of page  */
 }
+
 
 /* Main grid layout */
 .main-container {
@@ -19,7 +21,7 @@ html {
     "left-menu main" 
     "footer footer" ;
 
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: 195px 1fr;
     grid-template-rows: 1fr 90px ;
     height: 100vh;
 }
@@ -28,17 +30,17 @@ html {
     grid-area: left-menu;
     background-color: black;
     position: fixed;
-    width: 240px;  
-    height: 864.500px; 
+    width: 195px;  
+    height: 864.500px;
+
     /* position: sticky;
-    bottom: 0; */
-   
+    bottom: 0; */ 
 }
 
 .main-feed {
     grid-area: main;
 
-    background-color: rgb(32, 32, 32);
+    background-color: #121212;
 }
 
 .footer {
@@ -47,9 +49,83 @@ html {
     position: sticky;
     bottom: 0;
 
-    background-color: grey;
+    background-color: #181818;
+}
+/* End of main grid layout */
+
+
+/* Left menu  */
+#logo {
+   display: grid;
+    grid-template-rows: 60px;
+    grid-template-columns: repeat(2, 50px);
+    margin: 20px 25px;
 }
 
+.fa-spotify {
+    font-size: 40px;
+}
+
+#logo h1 {
+    position: relative;
+    top: -14px;
+    left: -6px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+
+.menu-list {
+    margin-top: -20px;
+}
+
+.menu-list li,
+.playlist li {
+    list-style: none;
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    margin-left: -10px;
+    width: 80%;
+    height: 45px;
+
+     /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    /* grid-gap: 10px; */
+}
+
+.menu-list li:nth-child(1) {
+    border-left: 3px solid green;
+}
+
+.menu-list .list-item-greyed {
+    opacity: .5; 
+}
+
+.menu-list .list-item-greyed:hover,
+.playlist:hover
+ {
+    opacity: 1;
+    transition: .4s;  
+}
+
+.menu-list img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+
+    margin-right: 20px;
+}
+/* End of left menu layout */
+
+
+/* Main feed layout */
 /* Header layout within the main feed grid */
 .header {
     display: grid;
@@ -58,5 +134,38 @@ html {
     grid-template-columns: 1fr;
     grid-template-rows: 60px;
 
-    background-color: blue;
+    background-color: #0C213D; 
 }
+
+.playlist {
+    margin-top: 40px;
+    width: 100%;
+    opacity: .5;
+
+    /* border: 2px solid red; */
+}
+
+/* Manually created the 'add playlist icon' */
+.fa-plus {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+
+.fa-heart {
+    background: linear-gradient(#6542F0, #A6B8E1);
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+
+.playlist hr {
+    margin-left: -20px;
+    width: 80%;
+}
+
+
+
