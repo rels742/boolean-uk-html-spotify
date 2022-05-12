@@ -31,7 +31,7 @@ html {
     background-color: black;
     position: fixed;
     width: 195px;  
-    height: 864.500px;
+    height: 900px;
 
     /* position: sticky;
     bottom: 0; */ 
@@ -48,6 +48,7 @@ html {
     display: grid;
     position: sticky;
     bottom: 0;
+    height: 90px;
 
     background-color: #181818;
 }
@@ -288,10 +289,11 @@ button:hover {
 /* End of main feed layout */
 
 
-.recently h2 {
+.main-feed-heading h2 {
     font-size: 25px;
     font-weight: 500;
     margin: 5px 0px 0 20px;
+    display: block;
 }
 
 .main-feed-nav {
@@ -347,3 +349,6 @@ button:hover {
     transition: .2s;
 }
 
+#podcasts h2 {
+    display: block;
+}
