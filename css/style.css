@@ -244,13 +244,14 @@ html {
 .nav-buttons {
     display: grid;
     grid-template-columns: 50px 50px 100px;
-    margin: 10px 40px;
+    margin: 10px 20px;
 }
 
 button {
     border-radius: 25px;
     width: 200px;
-    margin-left: 900px;
+    /* margin-left: 900px; */
+    
    
     cursor: pointer;
     background-color: transparent;
@@ -264,11 +265,85 @@ button:hover {
 
 .inner-container {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, 280px);
+    grid-template-rows: repeat(auto-fit, 360px);
+    margin-top: 50px;
+    
 }
 
+.music-container img {
+   object-fit: cover;
+   max-width: 100%;
+}
+
+.music-container {
+    background-color:  #181818;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 250px 40px 40px; 
+    margin-left: 20px; 
+}
 /* End of main feed layout */
 
+
+.recently h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 5px 0px 0 20px;
+}
+
+.main-feed-nav {
+    margin-top: 60px;
+    display: grid;
+    place-items: center;
+}
+
+.main-feed-nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    opacity: .5; 
+}
+
+.main-feed-nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.main-feed-nav li:hover {
+    opacity: 1;
+    transition: .4s;
+    border-bottom: 2px solid green;
+}
+
+.music-container h3,
+.music-container h4 {
+    margin-top: -50px;
+}
+
+.music-container h4 {
+    opacity: .5;
+    font-weight: 400;
+}
+
+/* How I got the play button to display on hover */
+ .fa-circle-play {
+    position: relative;
+    float: right;
+    margin-top: -150px;
+    margin-right: -120px;
+    color: transparent;
+}
+
+ .fa-circle-play:hover  {
+    position: relative;
+    float: right;
+    margin-top: -150px;
+    margin-right: -120px;
+    color: #1ed760;
+    visibility: visible;
+    transition: .2s;
+}
 
