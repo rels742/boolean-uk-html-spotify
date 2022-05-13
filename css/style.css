@@ -3,14 +3,14 @@ body {
     margin: 0;
     box-sizing: border-box;
     overflow: auto;    
-    /* overflow property stops the white space "bounce" effect when scrolling to the top and bottom of page  */
+    /* NTS overflow property stops the white space "bounce" effect when scrolling to the top and bottom of page  */
     color: white;
     font-family: 'Rubik', sans-serif;
 }
 
 html {
     overflow: hidden;
-    /* overflow property stops the white space "bounce" effect when scrolling to the top and bottom of page  */
+    /* NTS overflow property stops the white space "bounce" effect when scrolling to the top and bottom of page  */
 }
 
 
@@ -93,10 +93,6 @@ html {
     margin-left: -10px;
     width: 80%;
     height: 45px;
-
-     /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
-    /* grid-gap: 10px; */
 }
 
 .menu-list li:nth-child(1) {
@@ -119,7 +115,6 @@ html {
     height: 30px;
     position: relative;
     top: 10px;
-
     margin-right: 20px;
 }
 
@@ -132,13 +127,9 @@ html {
     margin-left: -10px;
     position: relative;
     height: 10px;
-
-    /* border: 2px solid red; */
 }
 
-
-
-/* Manually created the 'add playlist icon' */
+/* NTS How I manually created the 'add playlist' icon */
 .fa-plus {
     background-color: white;
     color: black;
@@ -147,7 +138,7 @@ html {
     margin-right: 20px;
 }
 
-.fa-heart {
+ .fa-heart  {
     background: linear-gradient(#6542F0, #A6B8E1);
     color: white;
     padding: 10px;
@@ -178,7 +169,6 @@ html {
 .install-app li:nth-child(1) {
     opacity: .5;
 }
-
 
 .profile {
     width: 30px;
@@ -251,9 +241,7 @@ html {
 button {
     border-radius: 25px;
     width: 200px;
-    /* margin-left: 900px; */
-    
-   
+
     cursor: pointer;
     background-color: transparent;
     border: solid white;
@@ -286,8 +274,6 @@ button:hover {
     grid-template-rows: 250px 40px 40px; 
     margin-left: 20px; 
 }
-/* End of main feed layout */
-
 
 .main-feed-heading h2 {
     font-size: 25px;
@@ -330,7 +316,7 @@ button:hover {
     font-weight: 400;
 }
 
-/* How I got the play button to display on hover */
+/* NTS How I got the play button to display on hover */
  .fa-circle-play {
     position: relative;
     float: right;
@@ -351,4 +337,33 @@ button:hover {
 
 #podcasts h2 {
     display: block;
+}
+/* End of main feed layout */
+
+
+/* Footer layout */
+.currentplaying {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    margin: 10px 20px;
+}
+
+.currentplaying p {
+    font-size: 12px;
+}
+
+.currentplaying img,
+.songnameandartist {
+    cursor: pointer;
+}
+
+.songnameandartist{
+    display: grid;
+    grid-template-columns: 55px 15px 15px;
+    grid-gap: 15px;
+}
+
+.songnameandartist .miniicons {
+    position: relative;
+    bottom: -20px;
 }
